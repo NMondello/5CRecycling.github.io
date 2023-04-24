@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
 body {
@@ -84,6 +83,13 @@ section {
      object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 .header-content .right-header {
   display: flex;
   flex-direction: column;
@@ -99,4 +105,4 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}

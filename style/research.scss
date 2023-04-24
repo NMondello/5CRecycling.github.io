@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #2779a7;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header{
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+}
+.sec1{
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+        100%{
+            transform: translateY(0) scaleY(1)
+        }
+    }
+}
+
+//About us content
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .h-shape{
+            transition: .4s ease-in-out;
+            width: 80%;
+            height: 100%;
+            background-color: #49c5b6;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            clip-path: circle(34.7% at 50% 50%);
+        }
+        .image{
+            border-radius: 14px;
+            height: 110%;
+            width: 100%;
+            margin-left: 0rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .4s ease-in-out;
+                
+            }
+        }
+    }
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+        .name{
+            font-size: 3 rem;
+            span{
+                color: #49c5b6;
+            }
+        }
+        p{
+            margin: 1.5rem 0;
+            line-height: 2rem;
+        }
+    }
+}

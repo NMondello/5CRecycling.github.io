@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
 body{
     background-color: #2779a7;
@@ -22,7 +21,6 @@ a{
 header{
     height: 100vh;
     color: white;
-    overflow: hidden;
 }
 section{
     min-height: 100vh;
@@ -63,7 +61,6 @@ section{
             left: 0;
             top: 0;
             z-index: -1;
-            clip-path: circle(34.7% at 50% 50%);
         }
         .image{
             border-radius: 14px;
@@ -94,5 +91,16 @@ section{
             margin: 1.5rem 0;
             line-height: 2rem;
         }
+    }
+}
+.claremont-header {
+    display: block;
+    justify-content: center;
+    .title{
+        font-size: 3 rem;
+        justify-content: center;
+    }
+    .pic{
+
     }
 }

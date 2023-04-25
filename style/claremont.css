@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
 body {
@@ -24,7 +23,6 @@ a {
 header {
   height: 100vh;
   color: white;
-  overflow: hidden;
 }
 
 section {
@@ -63,19 +61,18 @@ section {
   transition: 0.4s ease-in-out;
   width: 80%;
   height: 100%;
-  background-color: #49c5b6;
+  background-color: #2779a7;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: circle(34.7% at 50% 50%);
-          clip-path: circle(34.7% at 50% 50%);
 }
 .header-content .left-header .image {
   border-radius: 14px;
-  height: 110%;
+  height: 50%;
   width: 100%;
-  margin-left: 0rem;
+  margin-top: 12rem;
+  margin-left: 3.5rem;
 }
 .header-content .left-header .image img {
   width: 100%;
@@ -99,4 +96,13 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+}
+
+.claremont-header {
+  display: block;
+  justify-content: center;
+}
+.claremont-header .title {
+  font-size: 3 rem;
+  justify-content: center;
 }/*# sourceMappingURL=claremont.css.map */
